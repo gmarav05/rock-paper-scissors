@@ -81,12 +81,10 @@ function round(winner) {
         return winner;
     }
 
-
-
 }
 
-let comp = 0;
-let hum = 0;
+// let comp = 0;
+// let hum = 0;
 
 function final() {
 
@@ -94,54 +92,19 @@ function final() {
 
 console.log(round(winner));
 
-if (winner === "computer") {
-    comp++;
-} else if (winner === "human") {
-    hum++;
-}
+console.log(round(winner));
 
 console.log(round(winner));
 
-if (winner === "computer") {
-    comp++;
-} else if (winner === "human") {
-    hum++;
-}
-
-console.log(round(winner));
-
-if (winner === "computer") {
-    comp++;
-} else if (winner === "human") {
-    hum++;
-}
-
-console.log(round(winner));
-
-if (winner === "computer") {
-    comp++;
-} else if (winner === "human") {
-    hum++;
-}
-
-console.log(round(winner));
-
-if (winner === "computer") {
-    comp++;
-} else if (winner === "human") {
-    hum++;
-}
-
-
-if (hum > comp) {
-    console.log("Computer Score : " + comp)
-    console.log("Your Score : " + hum);
-    console.log("You Just won this Rock-Paper-Scissors")
-} else {
-    console.log("Computer Score : " + comp)
-    console.log("Your Score : " + hum);
-    console.log("YOU LOST!");
-}
+// if (hum > comp) {
+//     console.log("Computer Score : " + comp)
+//     console.log("Your Score : " + hum);
+//     console.log("You Just won this Rock-Paper-Scissors")
+// } else {
+//     console.log("Computer Score : " + comp)
+//     console.log("Your Score : " + hum);
+//     console.log("YOU LOST!");
+// }
 
 
 // step 6
