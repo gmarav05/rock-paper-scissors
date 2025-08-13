@@ -1,4 +1,4 @@
-Hello There!
+Hello There,
 
 This is my console Rock-Paper-Scissors Game.
 
@@ -8,6 +8,9 @@ For Mac : Cmd + Option + J
 
 For Windows : Ctrl + Shift + J
 
-Click the link to play but Before that 
 
-You can play using the website link.
+It has total 5 rounds 
+
+You can play using the website link, Good Luck.
+
+https://gmarav05.github.io/rock-paper-scissors/
