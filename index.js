@@ -2,9 +2,12 @@ console.log("Hello World");
 
  // computer choice
 
-let winner;
 
-function round(winner) {
+let humanScore = 0;
+let computerScore = 0;
+
+
+ function playGame() {
 
 
         function getComputerChoice() {
@@ -26,35 +29,36 @@ function round(winner) {
         }
 
 
-        let humanScore = 0;
-        let computerScore = 0;
-
         function playRound(humanChoice, computerChoice) {
 
             console.log("Computer : " + computerSelection);
             console.log("You : " + humanSelection);
 
             if (humanChoice === computerChoice) {
+                winner = "No one!";
                 console.log("Draw! It's a tie");
 
             } else if (humanChoice === "paper" &&  computerChoice === "rock") {
                 humanScore++;
                 console.log("You Won! Paper beats Rock");
+                return humanScore;
 
             } else if (humanChoice === "scissors" && computerChoice === "paper") {
                 humanScore++;
-                console.log("You Won! Scissors beats paper"); 
+                console.log("You Won! Scissors beats paper");
+                return humanScore; 
 
             } else if (humanChoice === "rock" && computerChoice === "scissors") {
                 humanScore++;
                 console.log("You Won! Rock beats scissors");  
+                return humanScore;
 
             } else  {
                 computerScore++;
                 console.log("You Lost!");  
+                return computerScore;
 
             }
-
 
         }
 
@@ -65,46 +69,18 @@ function round(winner) {
 
         playRound(humanSelection, computerSelection);
 
-        console.log(computerScore);
-        console.log(humanScore);
+        console.log("computer Score : " + computerScore + "human Score : " + humanScore);
 
-    winner = "";
-
-    if (humanScore > computerScore) {
-        winner = "human";
-        return winner;
-    } else if (computerScore > humanScore) {
-        winner = "computer";
-        return winner;
-    } else {
-        winner = "No one!"
-        return winner;
-    }
-
+    
 }
 
-// let comp = 0;
-// let hum = 0;
+console.log(" ");
 
-function final() {
+for (let index = 1; index <= 5; index++) {
+    console.log("Round : " + index);
+    playGame();
+    console.log(" ");
 
+    
+    
 }
-
-console.log(round(winner));
-
-console.log(round(winner));
-
-console.log(round(winner));
-
-// if (hum > comp) {
-//     console.log("Computer Score : " + comp)
-//     console.log("Your Score : " + hum);
-//     console.log("You Just won this Rock-Paper-Scissors")
-// } else {
-//     console.log("Computer Score : " + comp)
-//     console.log("Your Score : " + hum);
-//     console.log("YOU LOST!");
-// }
-
-
-// step 6
