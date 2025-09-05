@@ -36,33 +36,33 @@ let computerScore = 0;
             if (humanChoice === computerChoice) {
                 winner = "No one!";
                 console.log("Draw! It's a tie");
-                score.textContent = "Human score : " + humanScore + "   " + "   Computer score : " + computerScore;
+                score.textContent = "Human score : " + humanScore + "   " + "   Computer score : " + computerScore + "      ";
                 container.appendChild(score);
 
 
             } else if (humanChoice === "paper" &&  computerChoice === "rock") {
                 humanScore++;
-                score.textContent = "Human score : " + humanScore + "   " + "   Computer score : " + computerScore;
+                score.textContent = "Human score : " + humanScore + "   " + "   Computer score : " + computerScore + "      ";
                 container.appendChild(score);
 
                 return humanScore;
 
             } else if (humanChoice === "scissors" && computerChoice === "paper") {
                 humanScore++;
-                score.textContent = "Human score : " + humanScore + "   " + "   Computer score : " + computerScore;
+                score.textContent = "Human score : " + humanScore + "   " + "   Computer score : " + computerScore + "      ";
                 container.appendChild(score);
 
                 return humanScore; 
 
             } else if (humanChoice === "rock" && computerChoice === "scissors") {
                 humanScore++;
-                score.textContent = "Human score : " + humanScore + "   " + "   Computer score : " + computerScore;
+                score.textContent = "Human score : " + humanScore + "   " + "   Computer score : " + computerScore + "      ";
                 container.appendChild(score);
                 return humanScore;
 
             } else  {
                 computerScore++;
-                score.textContent = "Human score : " + humanScore + "   " + "   Computer score : " + computerScore;
+                score.textContent = "Human score : " + humanScore + "   " + "   Computer score : " + computerScore + "      ";
                 container.appendChild(score);
                 return computerScore;
 
